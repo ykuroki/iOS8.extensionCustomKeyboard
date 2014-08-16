@@ -1,7 +1,7 @@
 extensionCustomKeyboard
 =======================
 
-**iOS8 Custom Keyboard
+### for iOS8 Custom Keyboard ###
 
 iOS8から追加されるextensionのひとつ
 Custom Keyboardのサンプル。
