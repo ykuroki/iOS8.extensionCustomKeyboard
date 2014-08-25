@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77847D42199F33A10011C2A8 /* titleonly.png in Resources */ = {isa = PBXBuildFile; fileRef = 77847D41199F33A10011C2A8 /* titleonly.png */; };
 		77847D45199F56820011C2A8 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C2876C199F1ED1005169AB /* KeyboardViewController.m */; };
 		77C28743199F1E1B005169AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C28742199F1E1B005169AB /* main.m */; };
 		77C28746199F1E1B005169AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C28745199F1E1B005169AB /* AppDelegate.m */; };
@@ -61,7 +60,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		77847D41199F33A10011C2A8 /* titleonly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleonly.png; sourceTree = "<group>"; };
 		77C2873D199F1E1B005169AB /* KBEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C28741199F1E1B005169AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77C28742199F1E1B005169AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 		77C28768199F1ED1005169AB /* KBImageEditor */ = {
 			isa = PBXGroup;
 			children = (
-				77847D41199F33A10011C2A8 /* titleonly.png */,
 				77C2876B199F1ED1005169AB /* KeyboardViewController.h */,
 				77C2876C199F1ED1005169AB /* KeyboardViewController.m */,
 				77C28769199F1ED1005169AB /* Supporting Files */,
@@ -317,7 +314,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18029BD19AB301700CC5960 /* keyboard_1.xib in Resources */,
-				77847D42199F33A10011C2A8 /* titleonly.png in Resources */,
 				77C2877B199F2C1F005169AB /* MyKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

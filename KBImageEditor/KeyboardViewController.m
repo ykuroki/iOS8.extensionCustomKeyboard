@@ -77,7 +77,6 @@
 #pragma mark Keyboards
 -(void)addGesturesToKeyboard{
     [self.mykeyboard.deleteKey addTarget:self action:@selector(pressDeleteKey) forControlEvents:UIControlEventTouchUpInside];
-    [self.mykeyboard.spaceKey addTarget:self action:@selector(pressSpaceKey) forControlEvents:UIControlEventTouchUpInside];
     [self.mykeyboard.returnKey addTarget:self action:@selector(pressReturnKey) forControlEvents:UIControlEventTouchUpInside];
     
     //キーボードきりかえ
@@ -93,10 +92,6 @@
 
 -(void)pressDeleteKey {
     [self.textDocumentProxy deleteBackward];
-}
-
--(void)pressSpaceKey {
-    [self.textDocumentProxy insertText:@" "];
 }
 
 -(void)pressReturnKey {
