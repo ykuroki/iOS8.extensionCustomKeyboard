@@ -8,6 +8,7 @@
 
 #import "KeyboardViewController.h"
 #import "MyKeyboard.h"
+#import "KeySheet.h"
 
 @interface KeyboardViewController ()
 //@property (nonatomic, strong) UIButton *nextKeyboardButton;
@@ -28,6 +29,7 @@
     self.mykeyboard = [[[NSBundle mainBundle] loadNibNamed:@"MyKeyboard" owner:nil options:nil] objectAtIndex:0];
     [self addGesturesToKeyboard];
     self.inputView = self.mykeyboard;
+    
     
     // Perform custom UI setup here
     /*
@@ -84,6 +86,9 @@
     for (UIButton *key in self.mykeyboard.KeysArray) {
         [key addTarget:self action:@selector(pressKey:) forControlEvents:UIControlEventTouchUpInside];
     }
+
+    //テスト用ボタン
+    [self.mykeyboard.changeKey addTarget:self action:@selector(pressChangeKey) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void)pressDeleteKey {
@@ -102,5 +107,14 @@
     [self.textDocumentProxy insertText:[key currentTitle]];
 }
 
+-(void)pressChangeKey {
+    KeySheet *subView = [[KeySheet alloc] init];
+    [subView.SheetBtn addTarget:self action:@selector(pressSheetBtn) forControlEvents:UIControlEventTouchUpInside];
+    [self.mykeyboard.changeView addSubview:subView];
+}
+
+-(void)pressSheetBtn {
+    [self.textDocumentProxy insertText:@"success!!!"];
+}
 
 @end

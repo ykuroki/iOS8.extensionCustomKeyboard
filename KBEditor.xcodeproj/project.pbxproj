@@ -18,6 +18,8 @@
 		77C28770199F1ED1005169AB /* KBImageEditor.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77C28767199F1ED1005169AB /* KBImageEditor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		77C28779199F2C05005169AB /* MyKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C28778199F2C05005169AB /* MyKeyboard.m */; };
 		77C2877B199F2C1F005169AB /* MyKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C2877A199F2C1F005169AB /* MyKeyboard.xib */; };
+		B18029BD19AB301700CC5960 /* keyboard_1.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18029BC19AB301700CC5960 /* keyboard_1.xib */; };
+		B18029C019AB330B00CC5960 /* KeySheet.m in Sources */ = {isa = PBXBuildFile; fileRef = B18029BF19AB330B00CC5960 /* KeySheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,9 @@
 		77C28777199F2C05005169AB /* MyKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyKeyboard.h; sourceTree = "<group>"; };
 		77C28778199F2C05005169AB /* MyKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyKeyboard.m; sourceTree = "<group>"; };
 		77C2877A199F2C1F005169AB /* MyKeyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyKeyboard.xib; sourceTree = "<group>"; };
+		B18029BC19AB301700CC5960 /* keyboard_1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = keyboard_1.xib; sourceTree = "<group>"; };
+		B18029BE19AB330B00CC5960 /* KeySheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeySheet.h; sourceTree = "<group>"; };
+		B18029BF19AB330B00CC5960 /* KeySheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeySheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +181,9 @@
 				77C28777199F2C05005169AB /* MyKeyboard.h */,
 				77C28778199F2C05005169AB /* MyKeyboard.m */,
 				77C2877A199F2C1F005169AB /* MyKeyboard.xib */,
+				B18029BC19AB301700CC5960 /* keyboard_1.xib */,
+				B18029BE19AB330B00CC5960 /* KeySheet.h */,
+				B18029BF19AB330B00CC5960 /* KeySheet.m */,
 			);
 			path = KBImageEditor;
 			sourceTree = "<group>";
@@ -308,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18029BD19AB301700CC5960 /* keyboard_1.xib in Resources */,
 				77847D42199F33A10011C2A8 /* titleonly.png in Resources */,
 				77C2877B199F2C1F005169AB /* MyKeyboard.xib in Resources */,
 			);
@@ -339,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77C28779199F2C05005169AB /* MyKeyboard.m in Sources */,
+				B18029C019AB330B00CC5960 /* KeySheet.m in Sources */,
 				77847D45199F56820011C2A8 /* KeyboardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

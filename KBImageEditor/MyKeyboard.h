@@ -17,6 +17,8 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *KeysArray;
 
 
+@property (weak, nonatomic) IBOutlet UIButton *changeKey;
+@property (weak, nonatomic) IBOutlet UIView *changeView;
 
 
 
