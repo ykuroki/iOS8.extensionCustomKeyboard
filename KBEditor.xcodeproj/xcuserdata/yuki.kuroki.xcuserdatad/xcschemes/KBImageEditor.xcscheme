@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0600"
+   LastUpgradeVersion = "0510"
    wasCreatedForAppExtension = "YES"
    version = "1.3">
    <BuildAction
@@ -21,20 +21,6 @@
                ReferencedContainer = "container:KBEditor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "77C2873C199F1E1B005169AB"
-               BuildableName = "KBEditor.app"
-               BlueprintName = "KBEditor"
-               ReferencedContainer = "container:KBEditor.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -44,6 +30,16 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -53,26 +49,6 @@
             ReferencedContainer = "container:KBEditor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-   </TestAction>
-   <LaunchAction
-      selectedDebuggerIdentifier = ""
-      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
-      launchStyle = "0"
-      askForAppToLaunch = "Yes"
-      useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
-      ignoresPersistentStateOnLaunch = "NO"
-      debugDocumentVersioning = "YES"
-      allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "77C2873C199F1E1B005169AB"
-            BuildableName = "KBEditor.app"
-            BlueprintName = "KBEditor"
-            ReferencedContainer = "container:KBEditor.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -81,17 +57,7 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
-      debugDocumentVersioning = "YES"
-      askForAppToLaunch = "Yes">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "77C2873C199F1E1B005169AB"
-            BuildableName = "KBEditor.app"
-            BlueprintName = "KBEditor"
-            ReferencedContainer = "container:KBEditor.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
+      debugDocumentVersioning = "YES">
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

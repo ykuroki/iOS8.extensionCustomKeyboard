@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0600"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,20 +17,6 @@
                BlueprintIdentifier = "77C2873C199F1E1B005169AB"
                BuildableName = "KBEditor.app"
                BlueprintName = "KBEditor"
-               ReferencedContainer = "container:KBEditor.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "77C28752199F1E1B005169AB"
-               BuildableName = "KBEditorTests.xctest"
-               BlueprintName = "KBEditorTests"
                ReferencedContainer = "container:KBEditor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

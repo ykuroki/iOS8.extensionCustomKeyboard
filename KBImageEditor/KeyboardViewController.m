@@ -26,6 +26,7 @@
     [super viewDidLoad];
     
     self.mykeyboard = [[[NSBundle mainBundle] loadNibNamed:@"MyKeyboard" owner:nil options:nil] objectAtIndex:0];
+    [self addGesturesToKeyboard];
     self.inputView = self.mykeyboard;
     
     // Perform custom UI setup here
@@ -70,5 +71,36 @@
     }
     //[self.nextKeyboardButton setTitleColor:textColor forState:UIControlStateNormal];
 }
+
+#pragma mark Keyboards
+-(void)addGesturesToKeyboard{
+    [self.mykeyboard.deleteKey addTarget:self action:@selector(pressDeleteKey) forControlEvents:UIControlEventTouchUpInside];
+    [self.mykeyboard.spaceKey addTarget:self action:@selector(pressSpaceKey) forControlEvents:UIControlEventTouchUpInside];
+    [self.mykeyboard.returnKey addTarget:self action:@selector(pressReturnKey) forControlEvents:UIControlEventTouchUpInside];
+    
+    //キーボードきりかえ
+    [self.mykeyboard.globeKey addTarget:self action:@selector(advanceToNextInputMode) forControlEvents:UIControlEventTouchUpInside];
+    
+    for (UIButton *key in self.mykeyboard.KeysArray) {
+        [key addTarget:self action:@selector(pressKey:) forControlEvents:UIControlEventTouchUpInside];
+    }
+}
+
+-(void)pressDeleteKey {
+    [self.textDocumentProxy deleteBackward];
+}
+
+-(void)pressSpaceKey {
+    [self.textDocumentProxy insertText:@" "];
+}
+
+-(void)pressReturnKey {
+    [self.textDocumentProxy insertText:@"\n"];
+}
+
+-(void)pressKey:(UIButton *)key {
+    [self.textDocumentProxy insertText:[key currentTitle]];
+}
+
 
 @end
